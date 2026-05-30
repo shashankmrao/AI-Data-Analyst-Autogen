@@ -7,3 +7,6 @@ openai
 tiktoken
 autogen-ext[docker]
 streamlit
+setuptools
+
+-e .
