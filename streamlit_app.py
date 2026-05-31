@@ -46,7 +46,7 @@ async def run_analyser_gpt(docker,groq_model_client,task):
 
         return None
     except Exception as e:
-        st.error(f"Error": {e})
+        st.error(f"Error: {e}")
         return e
     finally:
         await stop_docker_container(docker)

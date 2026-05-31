@@ -8,5 +8,6 @@ tiktoken
 autogen-ext[docker]
 streamlit
 setuptools
+ipykernel
 
 -e .

@@ -12,14 +12,14 @@ async def main():
 
     try:
         task = 'Can you give me a graph of types of flowers in my data iris.csv'
-        await start_docker_container()
+        await start_docker_container(docker)
 
         async for message in team.run_stream(task=task):
             print(message)
     except Exception as e:
         print(e)
     finally:
-        await stop_docker_container
+        await stop_docker_container(docker)
 
 if __name__=='__main__':
     asyncio.run(main())
